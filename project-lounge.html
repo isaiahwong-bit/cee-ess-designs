@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lounge Lovers — Cee Ess Designs</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body class="is-project-page">
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Loader -->
+  <div class="loader loader--project" id="loader">
+    <div class="loader-inner">
+      <div class="loader-bar">
+        <div class="loader-bar-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo">
+      <svg class="logo-svg" viewBox="0 0 200 40" xmlns="http://www.w3.org/2000/svg">
+        <text x="0" y="28" font-family="'Caveat', cursive" font-size="26" fill="currentColor" font-weight="600" letter-spacing="0.5">cee ess designs</text>
+      </svg>
+    </a>
+    <div class="nav-links">
+      <a href="index.html#work" class="nav-link" data-text="Work">Work</a>
+      <a href="index.html#services" class="nav-link" data-text="Services">Services</a>
+      <a href="index.html#about" class="nav-link" data-text="About">About</a>
+      <a href="index.html#contact" class="nav-link nav-link--cta" data-text="Let's Talk">Let's Talk</a>
+    </div>
+    <button class="nav-menu-btn" id="menu-btn" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-links">
+      <a href="index.html#work" class="mobile-menu-link">Work</a>
+      <a href="index.html#services" class="mobile-menu-link">Services</a>
+      <a href="index.html#about" class="mobile-menu-link">About</a>
+      <a href="index.html#contact" class="mobile-menu-link">Let's Talk</a>
+    </div>
+  </div>
+
+  <!-- Project Hero -->
+  <section class="project-hero" style="--project-bg: #C8D8E4; --project-text: #2C4A5A;">
+    <div class="project-hero-bg"></div>
+    <div class="project-hero-content">
+      <a href="index.html#work" class="project-back" data-animate="fade-up">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Back to Work
+      </a>
+      <div class="project-hero-tags" data-animate="fade-up" data-delay="100">
+        <span>Technical Drawings</span>
+        <span>Marketing</span>
+        <span>Packaging</span>
+      </div>
+      <h1 class="project-hero-title" data-animate="fade-up" data-delay="200">Lounge Lovers</h1>
+      <p class="project-hero-subtitle" data-animate="fade-up" data-delay="300">Professional packaging, marketing materials, and technical drawings for an Australian design-led furniture brand.</p>
+    </div>
+  </section>
+
+  <!-- About the Project -->
+  <section class="project-about">
+    <div class="project-about-content">
+      <div class="project-about-left">
+        <h2 class="project-about-title" data-animate="fade-up">Elevating a furniture brand through precision and polish.</h2>
+      </div>
+      <div class="project-about-right">
+        <p data-animate="fade-up" data-delay="100">Lounge Lovers is an Australian design-led furniture brand known for their curated collection of contemporary and classic pieces. They required a suite of professional materials including technical drawings, marketing collateral, and packaging design.</p>
+        <p data-animate="fade-up" data-delay="200">The project demanded precision and attention to detail across every touchpoint. Technical drawings required exact specifications while still feeling on-brand. Marketing materials needed to balance product information with visual appeal. The cool blue-grey palette reflects the brand's sophisticated, calm aesthetic.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Details -->
+  <section class="project-details">
+    <div class="project-details-content">
+      <div class="project-detail-card" data-animate="fade-up">
+        <div class="project-detail-label">Deliverables</div>
+        <ul class="project-detail-list">
+          <li>Technical Drawings</li>
+          <li>Marketing Brochures</li>
+          <li>Packaging Design</li>
+          <li>Product Spec Sheets</li>
+          <li>Digital Ad Banners</li>
+          <li>Email Templates</li>
+        </ul>
+      </div>
+      <div class="project-detail-card" data-animate="fade-up" data-delay="100">
+        <div class="project-detail-label">Tools Used</div>
+        <div class="project-tools">
+          <span class="tool-badge tool-badge--light">Illustrator</span>
+          <span class="tool-badge tool-badge--light">Photoshop</span>
+          <span class="tool-badge tool-badge--light">Figma</span>
+        </div>
+      </div>
+      <div class="project-detail-card" data-animate="fade-up" data-delay="200">
+        <div class="project-detail-label">Color Palette</div>
+        <div class="project-palette">
+          <div class="palette-swatch" style="background: #2C4A5A;">
+            <span class="palette-name">Deep Blue</span>
+            <span class="palette-hex">#2C4A5A</span>
+          </div>
+          <div class="palette-swatch palette-swatch--dark-text" style="background: #C8D8E4;">
+            <span class="palette-name">Sky</span>
+            <span class="palette-hex">#C8D8E4</span>
+          </div>
+          <div class="palette-swatch palette-swatch--dark-text" style="background: #E8EFF4;">
+            <span class="palette-name">Mist</span>
+            <span class="palette-hex">#E8EFF4</span>
+          </div>
+          <div class="palette-swatch" style="background: #4A6A7A;">
+            <span class="palette-name">Steel</span>
+            <span class="palette-hex">#4A6A7A</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Showcase: Technical Drawings -->
+  <section class="project-showcase">
+    <div class="project-showcase-content">
+      <h2 class="project-showcase-title" data-animate="fade-up">Technical Drawings</h2>
+      <div class="showcase-full-panel" style="background: #C8D8E4; color: #2C4A5A;" data-animate="fade-up" data-delay="100">
+        <div class="spec-sheet" style="max-width: 600px;">
+          <div class="spec-sheet-header">
+            <span class="ss-label">Sofa Specifications</span>
+            <span class="ss-brand">loungelovers</span>
+          </div>
+          <div class="spec-sheet-title">Oasis</div>
+          <div class="spec-sheet-desc">The Oasis Modular Sofa combines effortless entertaining with luxurious comfort, featuring removable covers and a premium linen-cotton blend upholstery.</div>
+          <div class="sofa-drawing">
+            <div class="sofa-outline"></div>
+            <div class="sofa-dimensions">
+              <span class="sofa-dim">W: 100cm</span>
+              <span class="sofa-dim">D: 113cm</span>
+              <span class="sofa-dim">H: 66cm</span>
+            </div>
+          </div>
+          <div class="spec-sheet-details">
+            <div class="spec-detail">
+              <span class="spec-detail-label">Loungability</span>
+              <span class="spec-detail-value">Soft</span>
+            </div>
+            <div class="spec-detail">
+              <span class="spec-detail-label">Frame</span>
+              <span class="spec-detail-value">Solid Pine & Plywood</span>
+            </div>
+            <div class="spec-detail">
+              <span class="spec-detail-label">Seat</span>
+              <span class="spec-detail-value">70% Feather & 30% Fibre</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Showcase: Wordmark -->
+  <section class="project-showcase project-showcase--alt">
+    <div class="project-showcase-content">
+      <h2 class="project-showcase-title" data-animate="fade-up">Wordmark</h2>
+      <div class="showcase-split-panel" data-animate="fade-up" data-delay="100">
+        <div style="background: #C8D8E4; color: #2C4A5A;">
+          <div class="lounge-wordmark">
+            <span class="lw-main">loungelovers</span>
+          </div>
+        </div>
+        <div style="background: #2C4A5A; color: #C8D8E4;">
+          <div class="lounge-wordmark">
+            <span class="lw-main">loungelovers</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Showcase: Marketing Materials -->
+  <section class="project-showcase">
+    <div class="project-showcase-content">
+      <h2 class="project-showcase-title" data-animate="fade-up">Marketing Materials</h2>
+      <div class="showcase-collateral" data-animate="fade-up" data-delay="100">
+        <div class="collateral-card collateral-card--tall">
+          <div class="collateral-inner" style="background: #E8EFF4; color: #2C4A5A;">
+            <div style="text-align: center;">
+              <div style="font-weight: 400; letter-spacing: 0.25em; font-size: 1.2rem; text-transform: lowercase; margin-bottom: 1rem;">loungelovers</div>
+              <div style="height: 1px; background: currentColor; opacity: 0.15; width: 60px; margin: 0 auto 1rem;"></div>
+              <div style="font-size: 0.55rem; opacity: 0.4; line-height: 2; letter-spacing: 0.1em;">
+                Crafted from the finest oak,<br>
+                timeless material prized for its<br>
+                unmatched warmth, durability,<br>
+                and elegance.
+              </div>
+            </div>
+            <span class="collateral-label">Timber Swing Tag</span>
+          </div>
+        </div>
+        <div class="collateral-card">
+          <div class="collateral-inner collateral-inner--wide" style="background: #2C4A5A; color: #C8D8E4;">
+            <div style="text-align: center;">
+              <div style="font-weight: 400; letter-spacing: 0.2em; font-size: 0.9rem; text-transform: lowercase;">loungelovers</div>
+              <div style="font-size: 0.5rem; opacity: 0.4; margin-top: 0.5rem; letter-spacing: 0.1em;">Design-led furniture at exceptional value</div>
+            </div>
+            <span class="collateral-label" style="color: #C8D8E4;">Marketing Brochure</span>
+          </div>
+        </div>
+        <div class="collateral-card">
+          <div class="collateral-inner collateral-inner--wide" style="background: #C8D8E4; color: #2C4A5A;">
+            <div style="display: flex; gap: 1.5rem; align-items: center;">
+              <div class="swing-tag" style="background: #E8EFF4; color: #2C4A5A; flex-shrink: 0; width: 80px;">
+                <span class="st-brand" style="font-size: 0.5rem;">loungelovers</span>
+              </div>
+              <div class="swing-tag" style="background: #2C4A5A; color: #C8D8E4; flex-shrink: 0; width: 80px;">
+                <span class="st-brand" style="font-size: 0.5rem;">loungelovers</span>
+              </div>
+            </div>
+            <span class="collateral-label">Swing Tags</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Next Project -->
+  <section class="project-next">
+    <div class="project-next-content" data-animate="fade-up">
+      <span class="project-next-label">Next Project</span>
+      <a href="project-bailey.html" class="project-next-link">
+        <span class="project-next-title">Mr & Mrs Bailey<br>T&N</span>
+        <svg class="project-next-arrow" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <svg class="logo-svg footer-logo" viewBox="0 0 200 40" xmlns="http://www.w3.org/2000/svg">
+            <text x="0" y="28" font-family="'Caveat', cursive" font-size="26" fill="currentColor" font-weight="600" letter-spacing="0.5">cee ess designs</text>
+          </svg>
+          <p class="footer-tagline">Crafting brands that resonate.</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html#work">Work</a>
+          <a href="index.html#services">Services</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Cee Ess Designs. All rights reserved.</span>
+        <span>Designed with intention.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

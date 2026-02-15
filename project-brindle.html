@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brindle Pets — Cee Ess Designs</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body class="is-project-page">
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Loader -->
+  <div class="loader loader--project" id="loader">
+    <div class="loader-inner">
+      <div class="loader-bar">
+        <div class="loader-bar-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo">
+      <svg class="logo-svg" viewBox="0 0 200 40" xmlns="http://www.w3.org/2000/svg">
+        <text x="0" y="28" font-family="'Caveat', cursive" font-size="26" fill="currentColor" font-weight="600" letter-spacing="0.5">cee ess designs</text>
+      </svg>
+    </a>
+    <div class="nav-links">
+      <a href="index.html#work" class="nav-link" data-text="Work">Work</a>
+      <a href="index.html#services" class="nav-link" data-text="Services">Services</a>
+      <a href="index.html#about" class="nav-link" data-text="About">About</a>
+      <a href="index.html#contact" class="nav-link nav-link--cta" data-text="Let's Talk">Let's Talk</a>
+    </div>
+    <button class="nav-menu-btn" id="menu-btn" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-links">
+      <a href="index.html#work" class="mobile-menu-link">Work</a>
+      <a href="index.html#services" class="mobile-menu-link">Services</a>
+      <a href="index.html#about" class="mobile-menu-link">About</a>
+      <a href="index.html#contact" class="mobile-menu-link">Let's Talk</a>
+    </div>
+  </div>
+
+  <!-- Project Hero -->
+  <section class="project-hero" style="--project-bg: #D5D3C8; --project-text: #3D3C2E;">
+    <div class="project-hero-bg"></div>
+    <div class="project-hero-content">
+      <a href="index.html#work" class="project-back" data-animate="fade-up">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Back to Work
+      </a>
+      <div class="project-hero-tags" data-animate="fade-up" data-delay="100">
+        <span>Branding</span>
+        <span>Website Design</span>
+        <span>Brand Patterns</span>
+      </div>
+      <h1 class="project-hero-title" data-animate="fade-up" data-delay="200">Brindle Pets</h1>
+      <p class="project-hero-subtitle" data-animate="fade-up" data-delay="300">A playful yet minimal brand identity for a premium pet products brand, using earthy palettes and outdoor-inspired imagery.</p>
+    </div>
+  </section>
+
+  <!-- About the Project -->
+  <section class="project-about">
+    <div class="project-about-content">
+      <div class="project-about-left">
+        <h2 class="project-about-title" data-animate="fade-up">A brand that speaks to pet lovers who appreciate quality and nature.</h2>
+      </div>
+      <div class="project-about-right">
+        <p data-animate="fade-up" data-delay="100">Brindle Pets is a premium pet products company that believes pets deserve the same care and quality as their owners. They needed a brand that communicated trustworthiness and natural quality without being overly serious.</p>
+        <p data-animate="fade-up" data-delay="200">The design approach pairs bold, confident typography with soft, earthy tones drawn from the outdoors. Custom brand patterns add texture and personality across all touchpoints, while the website design creates a seamless shopping experience that puts products front and centre.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Details -->
+  <section class="project-details">
+    <div class="project-details-content">
+      <div class="project-detail-card" data-animate="fade-up">
+        <div class="project-detail-label">Deliverables</div>
+        <ul class="project-detail-list">
+          <li>Primary Wordmark</li>
+          <li>Brand Patterns</li>
+          <li>Website Design</li>
+          <li>Brand Guidelines</li>
+          <li>Packaging Templates</li>
+          <li>Social Media Kit</li>
+        </ul>
+      </div>
+      <div class="project-detail-card" data-animate="fade-up" data-delay="100">
+        <div class="project-detail-label">Tools Used</div>
+        <div class="project-tools">
+          <span class="tool-badge tool-badge--light">Figma</span>
+          <span class="tool-badge tool-badge--light">Illustrator</span>
+          <span class="tool-badge tool-badge--light">Photoshop</span>
+        </div>
+      </div>
+      <div class="project-detail-card" data-animate="fade-up" data-delay="200">
+        <div class="project-detail-label">Color Palette</div>
+        <div class="project-palette">
+          <div class="palette-swatch" style="background: #3D3C2E;">
+            <span class="palette-name">Forest</span>
+            <span class="palette-hex">#3D3C2E</span>
+          </div>
+          <div class="palette-swatch palette-swatch--dark-text" style="background: #D5D3C8;">
+            <span class="palette-name">Pebble</span>
+            <span class="palette-hex">#D5D3C8</span>
+          </div>
+          <div class="palette-swatch" style="background: #8B7D6B;">
+            <span class="palette-name">Bark</span>
+            <span class="palette-hex">#8B7D6B</span>
+          </div>
+          <div class="palette-swatch palette-swatch--dark-text" style="background: #F0EDE7;">
+            <span class="palette-name">Sand</span>
+            <span class="palette-hex">#F0EDE7</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Showcase: Wordmark & Tagline -->
+  <section class="project-showcase">
+    <div class="project-showcase-content">
+      <h2 class="project-showcase-title" data-animate="fade-up">Wordmark & Identity</h2>
+      <div class="showcase-full-panel" style="background: #3D3C2E; color: #F0EDE7;" data-animate="fade-up" data-delay="100">
+        <div class="brindle-wordmark">
+          <span class="bm-main">BRINDLE</span>
+          <span class="bm-tagline">Good dogs get dirty. Great gear keeps up.</span>
+        </div>
+      </div>
+      <div class="showcase-wordmark-grid" data-animate="fade-up" data-delay="200">
+        <div class="wordmark-card" style="background: #D5D3C8; color: #3D3C2E;">
+          <div class="brindle-wordmark">
+            <span class="bm-main" style="font-size: clamp(1.5rem, 3vw, 2.5rem);">BRINDLE</span>
+          </div>
+        </div>
+        <div class="wordmark-card" style="background: #F0EDE7; color: #3D3C2E;">
+          <div class="brindle-wordmark">
+            <span class="bm-main" style="font-size: clamp(1.5rem, 3vw, 2.5rem);">BRINDLE</span>
+            <span class="bm-tagline" style="font-size: clamp(0.5rem, 0.8vw, 0.65rem);">PETS</span>
+          </div>
+        </div>
+        <div class="wordmark-card" style="background: #8B7D6B; color: #F0EDE7;">
+          <div class="brindle-wordmark">
+            <span class="bm-main" style="font-size: clamp(1.5rem, 3vw, 2.5rem);">BRINDLE</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Showcase: Website Design -->
+  <section class="project-showcase project-showcase--alt">
+    <div class="project-showcase-content">
+      <h2 class="project-showcase-title" data-animate="fade-up">Website Design</h2>
+      <div class="showcase-split-panel" data-animate="fade-up" data-delay="100">
+        <div style="background: #F0EDE7; padding: 1.5rem; flex-direction: column;">
+          <div class="website-mockup" style="width: 100%;">
+            <div class="website-mockup-bar">
+              <div class="website-mockup-dot"></div>
+              <div class="website-mockup-dot"></div>
+              <div class="website-mockup-dot"></div>
+            </div>
+            <div class="website-mockup-content">
+              <div class="mockup-nav-bar">
+                <span class="mockup-nav-logo" style="color: #3D3C2E;">BRINDLE</span>
+                <div class="mockup-nav-links">
+                  <span>Shop</span>
+                  <span>About</span>
+                  <span>Contact</span>
+                </div>
+              </div>
+              <div class="mockup-hero-block">
+                <h3 style="color: #3D3C2E;">Adventure Ready</h3>
+                <p>Premium gear for your best mate</p>
+              </div>
+              <div class="mockup-grid-row">
+                <div class="mockup-grid-item" style="background: #D5D3C8;"></div>
+                <div class="mockup-grid-item" style="background: #8B7D6B;"></div>
+                <div class="mockup-grid-item" style="background: #D5D3C8;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="background: #3D3C2E; color: #F0EDE7; flex-direction: column; gap: 1.5rem;">
+          <div class="brindle-wordmark">
+            <span class="bm-main" style="font-size: clamp(1.2rem, 2.5vw, 2rem);">BRINDLE</span>
+            <span class="bm-tagline">Good dogs get dirty.<br>Great gear keeps up.</span>
+          </div>
+          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; width: 60%; opacity: 0.2;">
+            <div style="aspect-ratio: 1; border-radius: 4px; background: currentColor;"></div>
+            <div style="aspect-ratio: 1; border-radius: 4px; background: currentColor;"></div>
+            <div style="aspect-ratio: 1; border-radius: 4px; background: currentColor;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Showcase: Brand Collateral -->
+  <section class="project-showcase">
+    <div class="project-showcase-content">
+      <h2 class="project-showcase-title" data-animate="fade-up">Brand Collateral</h2>
+      <div class="showcase-collateral" data-animate="fade-up" data-delay="100">
+        <div class="collateral-card">
+          <div class="collateral-inner collateral-inner--wide" style="background: #D5D3C8; color: #3D3C2E;">
+            <div style="text-align: center;">
+              <div style="font-weight: 700; letter-spacing: 0.35em; font-size: 1rem; text-transform: uppercase;">BRINDLE</div>
+              <div style="font-size: 0.5rem; letter-spacing: 0.15em; text-transform: uppercase; opacity: 0.5; margin-top: 0.25rem;">Premium Pet Products</div>
+              <div style="width: 30px; height: 1px; background: currentColor; opacity: 0.2; margin: 0.75rem auto;"></div>
+              <div style="font-size: 0.4rem; opacity: 0.35; line-height: 1.8;">hello@brindlepets.com.au<br>Melbourne, Australia</div>
+            </div>
+            <span class="collateral-label">Business Card</span>
+          </div>
+        </div>
+        <div class="collateral-card">
+          <div class="collateral-inner collateral-inner--wide" style="background: #8B7D6B; color: #F0EDE7;">
+            <div style="width: 60%; height: 60%; background: repeating-linear-gradient(45deg, transparent, transparent 8px, rgba(240,237,231,0.08) 8px, rgba(240,237,231,0.08) 16px); border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+              <div style="font-weight: 700; letter-spacing: 0.3em; font-size: 0.7rem; text-transform: uppercase;">BRINDLE</div>
+            </div>
+            <span class="collateral-label" style="color: #F0EDE7;">Packaging</span>
+          </div>
+        </div>
+        <div class="collateral-card collateral-card--tall">
+          <div class="collateral-inner" style="background: #3D3C2E; color: #F0EDE7;">
+            <div style="text-align: center;">
+              <div style="font-weight: 700; letter-spacing: 0.35em; font-size: 1.5rem; text-transform: uppercase; margin-bottom: 1rem;">BRINDLE</div>
+              <div style="height: 1px; background: currentColor; opacity: 0.15; width: 60px; margin: 0 auto 1rem;"></div>
+              <div style="font-style: italic; font-size: 0.7rem; opacity: 0.5; font-weight: 300; line-height: 1.8;">Good dogs get dirty.<br>Great gear keeps up.</div>
+            </div>
+            <span class="collateral-label" style="color: #F0EDE7;">Brand Guidelines</span>
+          </div>
+        </div>
+        <div class="collateral-card">
+          <div class="collateral-inner collateral-inner--wide" style="background: #F0EDE7; color: #3D3C2E;">
+            <div style="display: flex; gap: 1rem; align-items: center;">
+              <div style="width: 40px; height: 40px; border: 2px solid #3D3C2E; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.6rem; letter-spacing: 0.1em;">B</div>
+              <div>
+                <div style="font-weight: 700; letter-spacing: 0.25em; font-size: 0.75rem; text-transform: uppercase;">BRINDLE</div>
+                <div style="font-size: 0.45rem; opacity: 0.4; letter-spacing: 0.1em;">PETS</div>
+              </div>
+            </div>
+            <span class="collateral-label">Social Media</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Next Project -->
+  <section class="project-next">
+    <div class="project-next-content" data-animate="fade-up">
+      <span class="project-next-label">Next Project</span>
+      <a href="project-plants.html" class="project-next-link">
+        <span class="project-next-title">The Plants<br>Project</span>
+        <svg class="project-next-arrow" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <svg class="logo-svg footer-logo" viewBox="0 0 200 40" xmlns="http://www.w3.org/2000/svg">
+            <text x="0" y="28" font-family="'Caveat', cursive" font-size="26" fill="currentColor" font-weight="600" letter-spacing="0.5">cee ess designs</text>
+          </svg>
+          <p class="footer-tagline">Crafting brands that resonate.</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html#work">Work</a>
+          <a href="index.html#services">Services</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Cee Ess Designs. All rights reserved.</span>
+        <span>Designed with intention.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

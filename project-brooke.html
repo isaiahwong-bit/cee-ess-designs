@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brooke Brodie Celebrant — Cee Ess Designs</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body class="is-project-page">
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Loader -->
+  <div class="loader loader--project" id="loader">
+    <div class="loader-inner">
+      <div class="loader-bar">
+        <div class="loader-bar-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo">
+      <svg class="logo-svg" viewBox="0 0 200 40" xmlns="http://www.w3.org/2000/svg">
+        <text x="0" y="28" font-family="'Caveat', cursive" font-size="26" fill="currentColor" font-weight="600" letter-spacing="0.5">cee ess designs</text>
+      </svg>
+    </a>
+    <div class="nav-links">
+      <a href="index.html#work" class="nav-link" data-text="Work">Work</a>
+      <a href="index.html#services" class="nav-link" data-text="Services">Services</a>
+      <a href="index.html#about" class="nav-link" data-text="About">About</a>
+      <a href="index.html#contact" class="nav-link nav-link--cta" data-text="Let's Talk">Let's Talk</a>
+    </div>
+    <button class="nav-menu-btn" id="menu-btn" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-links">
+      <a href="index.html#work" class="mobile-menu-link">Work</a>
+      <a href="index.html#services" class="mobile-menu-link">Services</a>
+      <a href="index.html#about" class="mobile-menu-link">About</a>
+      <a href="index.html#contact" class="mobile-menu-link">Let's Talk</a>
+    </div>
+  </div>
+
+  <!-- Project Hero -->
+  <section class="project-hero" style="--project-bg: #F6AEBD; --project-text: #C41E3A;">
+    <div class="project-hero-bg"></div>
+    <div class="project-hero-content">
+      <a href="index.html#work" class="project-back" data-animate="fade-up">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Back to Work
+      </a>
+      <div class="project-hero-tags" data-animate="fade-up" data-delay="100">
+        <span>Branding</span>
+        <span>Wordmark</span>
+      </div>
+      <h1 class="project-hero-title" data-animate="fade-up" data-delay="200">Brooke Brodie Celebrant</h1>
+      <p class="project-hero-subtitle" data-animate="fade-up" data-delay="300">A retro 70s-inspired brand identity using playful typography and a vibrant cherry red and cotton pink palette.</p>
+    </div>
+  </section>
+
+  <!-- About the Project -->
+  <section class="project-about">
+    <div class="project-about-content">
+      <div class="project-about-left">
+        <h2 class="project-about-title" data-animate="fade-up">Celebrating love with a brand as joyful as the ceremonies themselves.</h2>
+      </div>
+      <div class="project-about-right">
+        <p data-animate="fade-up" data-delay="100">Brooke Brodie is a marriage celebrant who brings warmth, humour, and genuine heart to every ceremony. She wanted a brand that reflected her personality: fun, bold, and unapologetically romantic.</p>
+        <p data-animate="fade-up" data-delay="200">Drawing from 70s retro aesthetics, the brand uses playful script typography paired with a bold cherry red and soft cotton pink palette. The result is a brand that feels like a celebration in itself, inviting couples to imagine their perfect day.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Details -->
+  <section class="project-details">
+    <div class="project-details-content">
+      <div class="project-detail-card" data-animate="fade-up">
+        <div class="project-detail-label">Deliverables</div>
+        <ul class="project-detail-list">
+          <li>Primary Wordmark</li>
+          <li>Secondary Logomark</li>
+          <li>Brand Guidelines</li>
+          <li>Stationery Suite</li>
+        </ul>
+      </div>
+      <div class="project-detail-card" data-animate="fade-up" data-delay="100">
+        <div class="project-detail-label">Tools Used</div>
+        <div class="project-tools">
+          <span class="tool-badge tool-badge--light">Figma</span>
+          <span class="tool-badge tool-badge--light">Illustrator</span>
+        </div>
+      </div>
+      <div class="project-detail-card" data-animate="fade-up" data-delay="200">
+        <div class="project-detail-label">Color Palette</div>
+        <div class="project-palette">
+          <div class="palette-swatch" style="background: #C41E3A;">
+            <span class="palette-name">Cherry</span>
+            <span class="palette-hex">#C41E3A</span>
+          </div>
+          <div class="palette-swatch palette-swatch--dark-text" style="background: #F6AEBD;">
+            <span class="palette-name">Cotton</span>
+            <span class="palette-hex">#F6AEBD</span>
+          </div>
+          <div class="palette-swatch palette-swatch--dark-text" style="background: #FDE8ED;">
+            <span class="palette-name">Blush</span>
+            <span class="palette-hex">#FDE8ED</span>
+          </div>
+          <div class="palette-swatch" style="background: #191919;">
+            <span class="palette-name">Ink</span>
+            <span class="palette-hex">#191919</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Showcase: Logo Variations -->
+  <section class="project-showcase">
+    <div class="project-showcase-content">
+      <h2 class="project-showcase-title" data-animate="fade-up">Logo Variations</h2>
+      <div class="showcase-logo-grid" data-animate="fade-up" data-delay="100">
+        <div class="logo-variation" style="background: #C41E3A; color: #F6AEBD;">
+          <div class="brooke-script">
+            <span class="script-main">Brooke Brodie</span>
+            <span class="script-sub">Celebrant</span>
+          </div>
+          <span class="logo-variation-label" style="color: #F6AEBD;">Primary</span>
+        </div>
+        <div class="logo-variation" style="background: #F6AEBD; color: #C41E3A;">
+          <div class="brooke-script">
+            <span class="script-main">Brooke Brodie</span>
+            <span class="script-sub">Celebrant</span>
+          </div>
+          <span class="logo-variation-label" style="color: #C41E3A;">Reversed</span>
+        </div>
+        <div class="logo-variation" style="background: #FDE8ED; color: #C41E3A;">
+          <div class="bb-monogram">
+            <span>BB</span>
+          </div>
+          <span class="logo-variation-label" style="color: #C41E3A;">Monogram</span>
+        </div>
+        <div class="logo-variation" style="background: #191919; color: #F6AEBD;">
+          <div class="brooke-script">
+            <span class="script-main">Brooke Brodie</span>
+            <span class="script-sub">Celebrant</span>
+          </div>
+          <span class="logo-variation-label" style="color: #F6AEBD;">Dark</span>
+        </div>
+        <div class="logo-variation" style="background: #C41E3A; color: #FDE8ED;">
+          <div class="bb-monogram">
+            <span>BB</span>
+          </div>
+          <span class="logo-variation-label" style="color: #FDE8ED;">Monogram Alt</span>
+        </div>
+        <div class="logo-variation" style="background: #F6AEBD; color: #191919;">
+          <div style="font-family: 'Playfair Display', serif; font-style: italic; font-size: clamp(2rem, 4vw, 3rem);">B</div>
+          <span class="logo-variation-label" style="color: #191919;">Logomark</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Showcase: Primary Wordmark -->
+  <section class="project-showcase project-showcase--alt">
+    <div class="project-showcase-content">
+      <h2 class="project-showcase-title" data-animate="fade-up">Primary Wordmark</h2>
+      <div class="showcase-full-panel" style="background: #C41E3A; color: #F6AEBD;" data-animate="fade-up" data-delay="100">
+        <div class="brooke-script" style="transform: scale(1.4);">
+          <span class="script-main">Brooke Brodie</span>
+          <span class="script-sub">Celebrant</span>
+        </div>
+      </div>
+      <div class="showcase-split-panel" data-animate="fade-up" data-delay="200">
+        <div style="background: #F6AEBD; color: #C41E3A;">
+          <div class="brooke-border-card">
+            <div class="brooke-est">Est. 2021</div>
+            <div class="brooke-script" style="margin: 0.75rem 0;">
+              <span class="script-main" style="font-size: clamp(1.5rem, 3vw, 2.5rem);">Brooke Brodie</span>
+            </div>
+            <div class="brooke-est">Celebrant</div>
+          </div>
+        </div>
+        <div style="background: #FDE8ED; color: #C41E3A;">
+          <div class="bb-monogram" style="transform: scale(1.4);">
+            <span>BB</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Showcase: Stationery -->
+  <section class="project-showcase">
+    <div class="project-showcase-content">
+      <h2 class="project-showcase-title" data-animate="fade-up">Stationery Suite</h2>
+      <div class="stationery-grid" data-animate="fade-up" data-delay="100">
+        <div class="stationery-item">
+          <div class="stationery-letterhead" style="background: #FDE8ED; color: #C41E3A;">
+            <div style="margin-bottom: auto;">
+              <div class="brooke-script">
+                <span class="script-main" style="font-size: 1.2rem;">Brooke Brodie</span>
+                <span class="script-sub" style="font-size: 0.5rem;">Celebrant</span>
+              </div>
+            </div>
+            <div style="margin-top: auto;">
+              <div style="height: 1px; background: currentColor; opacity: 0.15; margin-bottom: 0.75rem;"></div>
+              <div style="font-size: 0.45rem; opacity: 0.4; line-height: 1.8; letter-spacing: 0.05em;">
+                hello@brookebrodiecelebrant.com.au<br>
+                Melbourne, Victoria<br>
+                @brookebrodiecelebrant
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="stationery-item">
+          <div class="stationery-business-card" style="background: #C41E3A; color: #F6AEBD;">
+            <div class="brooke-script">
+              <span class="script-main" style="font-size: 0.9rem;">Brooke Brodie</span>
+              <span class="script-sub" style="font-size: 0.4rem;">Celebrant</span>
+            </div>
+          </div>
+        </div>
+        <div class="stationery-item">
+          <div class="stationery-business-card" style="background: #F6AEBD; color: #C41E3A;">
+            <div class="bb-monogram" style="width: 50px; height: 50px;">
+              <span style="font-size: 1.5rem;">BB</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Next Project -->
+  <section class="project-next">
+    <div class="project-next-content" data-animate="fade-up">
+      <span class="project-next-label">Next Project</span>
+      <a href="project-brindle.html" class="project-next-link">
+        <span class="project-next-title">Brindle Pets</span>
+        <svg class="project-next-arrow" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <svg class="logo-svg footer-logo" viewBox="0 0 200 40" xmlns="http://www.w3.org/2000/svg">
+            <text x="0" y="28" font-family="'Caveat', cursive" font-size="26" fill="currentColor" font-weight="600" letter-spacing="0.5">cee ess designs</text>
+          </svg>
+          <p class="footer-tagline">Crafting brands that resonate.</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html#work">Work</a>
+          <a href="index.html#services">Services</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Cee Ess Designs. All rights reserved.</span>
+        <span>Designed with intention.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
