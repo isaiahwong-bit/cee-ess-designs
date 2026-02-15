@@ -189,18 +189,34 @@
   });
 
 
-  // ── Form Handling ──────────────────────
+  // ── Form Handling (Formspree) ──────────
   const form = document.querySelector('.contact-form');
   if (form) {
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
       const btn = form.querySelector('.btn-submit span');
       const originalText = btn.textContent;
-      btn.textContent = 'Sent!';
-      setTimeout(() => {
-        btn.textContent = originalText;
-        form.reset();
-      }, 2500);
+      btn.textContent = 'Sending...';
+
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if (response.ok) {
+          btn.textContent = 'Sent!';
+          form.reset();
+          setTimeout(() => { btn.textContent = originalText; }, 3000);
+        } else {
+          btn.textContent = 'Error — try again';
+          setTimeout(() => { btn.textContent = originalText; }, 3000);
+        }
+      } catch (err) {
+        btn.textContent = 'Error — try again';
+        setTimeout(() => { btn.textContent = originalText; }, 3000);
+      }
     });
   }
 
