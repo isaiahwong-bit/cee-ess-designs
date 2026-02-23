@@ -53,17 +53,54 @@
     lastScroll = scrollY;
   });
 
+  function openMobileMenu() {
+    menuBtn.classList.add('active');
+    mobileMenu.classList.add('active');
+    menuBtn.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+    // Trap focus within mobile menu
+    const focusable = mobileMenu.querySelectorAll('a');
+    if (focusable.length) focusable[0].focus();
+  }
+
+  function closeMobileMenu() {
+    menuBtn.classList.remove('active');
+    mobileMenu.classList.remove('active');
+    menuBtn.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = 'auto';
+    menuBtn.focus();
+  }
+
   menuBtn.addEventListener('click', () => {
-    menuBtn.classList.toggle('active');
-    mobileMenu.classList.toggle('active');
-    document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : 'auto';
+    if (mobileMenu.classList.contains('active')) {
+      closeMobileMenu();
+    } else {
+      openMobileMenu();
+    }
+  });
+
+  // Trap focus within mobile menu when open
+  mobileMenu.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeMobileMenu();
+      return;
+    }
+    if (e.key !== 'Tab') return;
+    const focusable = mobileMenu.querySelectorAll('a');
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    if (e.shiftKey && document.activeElement === first) {
+      e.preventDefault();
+      last.focus();
+    } else if (!e.shiftKey && document.activeElement === last) {
+      e.preventDefault();
+      first.focus();
+    }
   });
 
   document.querySelectorAll('.mobile-menu-link').forEach((link) => {
     link.addEventListener('click', () => {
-      menuBtn.classList.remove('active');
-      mobileMenu.classList.remove('active');
-      document.body.style.overflow = 'auto';
+      closeMobileMenu();
     });
   });
 
@@ -134,7 +171,7 @@
   const loader = document.getElementById('loader');
   document.body.style.overflow = 'hidden';
 
-  const loaderDelay = isProjectPage ? 600 : 2400;
+  const loaderDelay = isProjectPage ? 600 : 1200;
   const heroSelector = isProjectPage ? '.project-hero [data-animate]' : '.hero [data-animate]';
 
   window.addEventListener('load', () => {
